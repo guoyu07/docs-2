@@ -1,0 +1,314 @@
+/*Typed JS*/
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/*Fonts*/
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Josefin Sans Thin'), local('JosefinSans-Thin'), url(http://fonts.gstatic.com/s/josefinsans/v9/q9w3H4aeBxj0hZ8Osfi3dyU-eqv6n8lOlIZB5nq_8UM.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Josefin Sans Thin'), local('JosefinSans-Thin'), url(http://fonts.gstatic.com/s/josefinsans/v9/q9w3H4aeBxj0hZ8Osfi3d1dBB84BqlWy1BjOnCrU9PY.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Josefin Sans'), local('JosefinSans'), url(http://fonts.gstatic.com/s/josefinsans/v9/xgzbb53t8j-Mo-vYa23n5j0LW-43aMEzIO6XUTLjad8.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Josefin Sans'), local('JosefinSans'), url(http://fonts.gstatic.com/s/josefinsans/v9/xgzbb53t8j-Mo-vYa23n5ugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Dancing Script'), local('DancingScript'), url(https://fonts.gstatic.com/s/dancingscript/v7/DK0eTGXiZjN6yA8zAEyM2Ud0sm1ffa_JvZxsF_BEwQk.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+.article {
+    border-top: 1px dashed #ccc;
+    border-left: 1px dashed #ccc;
+    padding-top: 10px;
+}
+.sidebar {
+    border-top: 1px dashed #ccc;
+}
+.sidebar ul {
+    list-style-type: none;
+}
+.sidebar .menu-level-1 > .nav-menu-title {
+    font-weight: bold;
+    font-size: 1.1em;
+    border-bottom: 1px dashed #c3c3c3;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+#sidebarModal .modal-title {
+    text-align: center;
+    font-size: 1.5em;
+}
+.sidebar-modal ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.sidebar-modal li {
+    text-align: center;
+}
+.sidebar-modal a {
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    font-size: 1.5em;
+}
+.sidebar-modal ul li a:hover {
+    background-color: #e4e4e4;
+}
+.sidebar-modal .menu-level-1 > .nav-menu-title {
+    font-weight: bold;
+    font-size: 1.3em;
+    border-bottom: 1px dashed #e4e4e4;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+ul[class*="sidebar-level"],
+h1,h2,h3,h4,h5,h6
+{
+    font-family: 'Josefin Sans', sans-serif !important;
+}
+.sidebar-level-2 {
+    padding:0;
+}
+h1 {
+    margin-top: 1.5em;
+}
+h2, h3, h4 {
+    margin-top: 1em;
+}
+h5, h6 {
+    margin-top: 0.5em;
+}
+nav .active-slayer a {
+    border-bottom: 2px solid #0E99F5 !important;
+    color: #0E99F5 !important;
+}
+nav .active-slayer a:hover {
+    border: 1px solid #2D3F51;
+}
+
+nav a {
+    color: #95989A;
+}
+.navbar {
+    font-family: "Josefin Sans";
+    font-size: 15px;
+    background-color: #FFFFFF;
+    border-radius: 0;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #E1E1E1;
+    padding-top: 5px;
+    margin-top: 2px;
+}
+.navbar ul li a {
+    border: 1px solid transparent;
+}
+.navbar ul li a:hover,
+.navbar ul li a:focus {
+    color: #0E99F5 !important;
+    border-bottom: 2px solid #0E99F5 !important;
+    background-color: transparent !important;
+}
+.navbar-brand {
+    font-family: "Dancing Script";
+    font-size: 40px;
+    height: 57px;
+    color: #2C3E50;
+}
+.navbar-form i {
+    color: #95989A;
+}
+.nav-link {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.dropdown-toggle {
+    background-color: transparent;
+    color: #95989A;
+    border: 1px solid #95989A;
+}
+.version {
+    margin-top: 60px;
+}
+pre {
+    background: #f3f3f3;
+    border: 1px solid #e3e3e3;
+    padding: 20px 10px;
+    box-shadow: 0 2px 0 0 #e3e3e3;
+}
+.footer {
+    border-top:2px dashed #ccc;
+    margin:50px 0;
+    padding:20px 0 10px;
+}
+.designed-by {
+    padding-top:10px;
+}
+.hljs-line-numbers {
+    text-align: right;
+    border-right: 1px solid #ccc;
+    color: #999;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding:0 5px 0 0 !important;
+}
+pre code {
+    white-space: inherit;
+}
+li > a {
+    word-wrap: break-word;
+}
+.dropdown-toggle {
+    background-color: transparent;
+    color: #95989A;
+    border: 1px solid #95989A;
+}
+.version {
+    margin-top: 60px;
+}
+
+/*section for home*/
+#introduction .container {
+    font-family: "Josefin Sans";
+    font-size: 39px;
+    /*text-align: center;*/
+    color: #95989A;
+    /*width: 45%;*/
+}
+
+#introduction i {
+    color: #95989A;
+    background-color: #F9F9F9;
+    border: 1px solid #FAF5F5;
+    box-shadow: #0f0f0f;
+    border-radius: 25px 25px;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    /*margin-top: 30vh;*/
+}
+
+/*second section */
+#second {
+    font-family: "Josefin Sans";
+    font-weight: lighter;
+    font-size: 40px;
+
+    color: #FFFFFF;
+    background-color: #2D3F51;
+    height: 620px;
+}
+
+.second-content .header {
+    /*margin-left: 20%;*/
+    margin-top: 30px;
+    text-align: center;
+}
+
+#second svg {
+    border-radius: 10px;
+    width: 765px;
+    height: 356px;
+}
+
+/*third section */
+#third {
+    font-family: "Josefin Sans";
+    font-weight: normal;
+    background-color: #F8F8F8;
+    position: relative;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    margin-top: 5vh;
+}
+#third .header {
+    font-size: 25px;
+    padding: 23px;
+    /*color: #616E77;*/
+    color: #000;
+    text-align: center;
+}
+#third i {
+    color: #616E77;
+    margin-right: 9px;
+    font-size: 15px;
+}
+#third .row {
+    color: #95989A;
+    padding: 30px;
+}
+#third .center {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+}
+footer .content {
+    font-family: "Josefin Sans";
+}
+footer .left {
+    float: left;
+    font-style: italic;
+}
+footer .right {
+    float: right;
+}
+footer i {
+    margin-right: 5px;
+}
+#roadmapIframe {
+    overflow:auto;
+}
+#roadmapIframe iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

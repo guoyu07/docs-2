@@ -1,0 +1,14 @@
+{
+    "name": "phalconslayer/docs",
+    "description": "S.Layer's Documentation",
+    "authors": [
+        {
+            "name": "Daison Carino",
+            "email": "daison12006013@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php-pure/themer": "0.1.*@dev"
+    }
+}
