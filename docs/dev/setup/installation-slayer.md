@@ -10,11 +10,15 @@ You can learn how to install phalcon slayer, how to initially setup your environ
 
 Before installing, there are plenty of tools that we need to install.
 
-- Required
-    - PHP version atleast 5.5.9
-    - <a href="setup-installation-phalcon.html">Phalcon as Extension</a>
-    - [Composer](https://getcomposer.org/)
-    - [cURL](https://curl.haxx.se)
+- Required 
+    - atleast PHP 5.5.9
+        + <a href="setup-installation-phalcon.html">Phalcon as Extension</a>
+        + [Composer](https://getcomposer.org/)
+        + [cURL](https://curl.haxx.se)
+    - PHP 7.0
+        + ext-dom
+        + ext-mbstring
+        + ext-curl
 - For Queueing
     - You are required to install [Beanstalkd](http://kr.github.io/beanstalkd/) for queueing.
 
