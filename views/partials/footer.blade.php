@@ -16,6 +16,11 @@
       <div class="designed-by">
         <span>Designed By: <a target="_blank" href="http://napoleon.vyew.me">Napoleon Cariño</a></span>
       </div>
+      @if (defined('SLAYER_START'))
+        <div class="processing-time">
+          <span>Server Speed: <?php echo processing_time(SLAYER_START) ?></span>
+        </div>
+      @endif
     </div>
   </div>
 </div>
