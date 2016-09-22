@@ -1,11 +1,22 @@
-The database
+`Phalcon\Db` is the component behind `Phalcon\Mvc\Model` that powers the model layer in the framework. It consists of an independent high-level abstraction layer for database systems completely written in C.
+
+<div class="alert alert-danger">
+<i class="fa fa-warning"></i> This guide is not intended to be a complete documentation of available methods and their arguments. Please visit the <a href="https://docs.phalconphp.com/en/latest/api/index.html" target="_blank">API</a> for a complete reference.
+</div>
 
 ## Index
-- Basic Usage
-- Usage
+- [Connection](#connection)
+- [Finding Rows](#finding-rows)
+- [Binding Parameters](#binding-parameters)
+- [Inserting/Updating/Deleting Rows](#inserting-updating-deleting-rows)
+- [Transactions and Nested Transactions](#transactions-and-nested-transactions)
+- [Database Events](#database-events)
+- [Profiling SQL Statements](#profiling-sql-statements)
+- [Logging SQL Statements](#logging-sql-statements)
+- [Describing Tables/Views](#describing-tables-views)
 
 
-# Basic Usage
+# <a href="#connection" name="connection">Connection</a>
 
 Assume that we have the index `sqlite` in our `{project-root}/config/database.php`, and we want that connection to use. You may call it these way:
 
@@ -17,9 +28,7 @@ $connection = \DB::connection('sqlite');
 $connection = db()->connection('sqlite');
 ```
 
-# Usage
-
-## Finding Rows
+# <a href="#finding-rows" name="finding-rows">Finding Rows</a>
 
 `Phalcon\Db` provides several methods to query rows from tables. The specific SQL syntax of the target database engine is required in this case:
 
@@ -84,7 +93,7 @@ $robot = $result->fetch();
 echo $result->numRows();
 ```
 
-## Binding Parameters
+# <a href="#binding-parameters" name="binding-parameters">Binding Parameters</a>
 
 Bound parameters is also supported in `Phalcon\Db`. Although there is a minimal performance impact by using bound parameters, you are encouraged to use this methodology so as to eliminate the possibility of your code being subject to SQL injection attacks. Both string and positional placeholders are supported. Binding parameters can simply be achieved as follows:
 
@@ -110,7 +119,7 @@ $sql    = "SELECT * FROM robots WHERE name = ? ORDER BY name";
 $result = $connection->query($sql, [1 => "Wall-E"]);
 ```
 
-## Inserting/Updating/Deleting Rows
+# <a href="#inserting-updating-deleting-rows" name="inserting-updating-deleting-rows">Inserting/Updating/Deleting Rows</a>
 
 To insert, update or delete rows, you can use raw SQL or use the preset functions provided by the class:
 
@@ -199,7 +208,7 @@ $success = $connection->execute($sql, [101]);
 $success = $connection->delete("robots", "id = ?", [101]);
 ```
 
-## Transactions and Nested Transactions
+# <a href="#transactions-and-nested-transactions" name="transactions-and-nested-transactions">Transactions and Nested Transactions</a>
 
 Working with transactions is supported as it is with PDO. Perform data manipulation inside transactions often increase the performance on most database systems:
 
@@ -263,7 +272,7 @@ try {
 }
 ```
 
-# Database Events
+# <a href="#database-events" name="database-events">Database Events</a>
 
 `Phalcon\Db` is able to send events to a `EventsManager` if it’s present. Some events when returning boolean false could stop the active operation. The following events are supported:
 
@@ -313,7 +322,7 @@ $manager->attach('db:beforeQuery', function ($event, $conn) {
 });
 ```
 
-# Profiling SQL Statements
+# <a href="#profiling-sql-statements" name="profiling-sql-statements">Profiling SQL Statements</a>
 
 `Phalcon\Db` includes a profiling component called `Phalcon\Db\Profiler`, that is used to analyze the performance of database operations so as to diagnose performance problems and discover bottlenecks.
 
@@ -397,13 +406,13 @@ $dbProfiler = new DbProfiler();
 $eventsManager->attach('db', $dbProfiler);
 ```
 
-# Logging SQL Statements
+# <a href="#logging-sql-statements" name="logging-sql-statements">Logging SQL Statements</a>
 
 When calling `\DB::connection(...)`, everytime you query, it always logs all the statements which is located at `{project-root}/storage/logs/db.log`.
 
 This is implemented under the class `Clarity\Providers\DB::getEventLogger()` which uses `beforeQuery` to be able to log previous sql statements.
 
-# Describing Tables/Views
+# <a href="#describing-tables-views" name="describing-tables-views">Describing Tables/Views</a>
 
 `Phalcon\Db` also provides methods to retrieve detailed information about tables and views:
 
