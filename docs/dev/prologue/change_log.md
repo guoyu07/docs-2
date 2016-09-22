@@ -19,6 +19,7 @@ Every changes of our code, we should logged it here for future reference.
 - Added Psysh as `php brood clutch` for interactive app inside slayer
 - Added `composer.lock`
 - Fixed `php brood serve` that doesn't support multi module call in the optione `--file`
+- Fixed the `db` service, as it can't use to call the method `connection()`
 
 
 ---

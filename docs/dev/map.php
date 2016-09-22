@@ -32,7 +32,7 @@ return [
         'Auth'                 => __DIR__.'/services/auth.md',
         'Cache'                => __DIR__.'/services/cache.md',
         'DB'                   => __DIR__.'/services/db.md',
-        'Dispatcher'           => __DIR__.'/services/dispatcher.md',
+        // 'Dispatcher'           => __DIR__.'/services/dispatcher.md',
         'Flash'                => __DIR__.'/services/flash.md',
         'FlashBag'             => __DIR__.'/services/flash_bag.md',
         'Flysystem'            => __DIR__.'/services/flysystem.md',
