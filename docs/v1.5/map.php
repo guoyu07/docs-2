@@ -9,6 +9,7 @@ return [
         'Installation'  => [
             'Phalcon' => __DIR__.'/setup/installation-phalcon.md',
             'Slayer'  => __DIR__.'/setup/installation-slayer.md',
+            'Docker' => __DIR__.'/setup/installation-docker.md'
         ],
         'Configuration'       => __DIR__.'/setup/configuration.md',
         'Directory Structure' => __DIR__.'/setup/directory-structure.md',
