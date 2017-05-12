@@ -67,4 +67,8 @@ You can tinker around and change it the way you like.
 docker uses the overwrite.ini file under `./storage/.docker` directory.
 
 ## xdebug
-TODO: add docs on xdebug
+Slayer comes with xdebug out of the box, you can start a container and set a breakpoint and start debugging, it does
+require a minor configuration. For Linux user it should work out of the box as it uses `xdebug.remote_connect_back`.
+
+Mac and Windows users should disable remote_connect_back and set IP address of their host machine on `ini` file which is
+present in storage/.docker/overwrite.ini
