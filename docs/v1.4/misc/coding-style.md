@@ -51,7 +51,7 @@ The rest, we follow the PSR standards, make your code self explanatory, even wit
 
 We find using `#` for adding user comments is more readable, and `//` for unused code comment which automatically an eye catching that it is an unused code.
 
-We should only use `/** doc block **/` for class functions and properties/native functions.
+We should only use `/** doc block **/` for methods, properties or functions.
 
 For deeper understanding, please check below code for more.
 
